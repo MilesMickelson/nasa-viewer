@@ -1,6 +1,10 @@
-node_modules
-dist
 .cache
-dist
-*.log
 .env
+lib-cov
+coverage
+.DS_Store
+logs
+*.log
+node_modules
+.vscode
+dist

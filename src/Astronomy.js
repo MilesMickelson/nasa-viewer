@@ -6,7 +6,7 @@ const Astronomy = (props) => {
 
 	return (
 		<div className="col-12">
-			<div className="row header-rowgit">
+			<div className="row header-row">
 				<div className="col-12">
 				  <div className="header-wrap">
 						<div className="nasa-logo-wrapper">
