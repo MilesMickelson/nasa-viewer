@@ -1,7 +1,7 @@
 const express = require('express');
 const axios = require('axios');
-
 const app = express();
+require('dotenv').config()
 
 app.use(express.static('dist'));
 app.use(express.static('public'));

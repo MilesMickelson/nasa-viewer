@@ -1,0 +1,7 @@
+{
+  "editor.detectIndentation": false,
+  "editor.tabSize": 2,
+	"editor.defaultFormatter": "vscode.configuration-editing",
+	"editor.insertSpaces": false,
+	"javascript.format.insertSpaceAfterSemicolonInForStatements": false
+}
