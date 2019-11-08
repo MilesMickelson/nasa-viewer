@@ -45,12 +45,3 @@ const Astronomy = (props) => {
 
 export default Astronomy;
 
-      // <Row>
-			// 	<Col xs={{ size: 3, order: 1 }}>
-			// 		<img className="nasa-logo" 
-			// 		src="https://api.nasa.gov/images/logo.png"></img>
-			// 	</Col>
-			// 	<Col xs={{ size: 9, order: 2 }}>
-			// 		<div className="main-title">NASA</div>
-			// 	</Col>
-			// </Row>

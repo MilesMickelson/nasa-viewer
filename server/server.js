@@ -1,20 +1,27 @@
 const express = require('express');
+const morgan = require('morgan');
+const dotenv = require('dotenv');
 const axios = require('axios');
-const app = express();
-require('dotenv').config()
 
+dotenv.config();
+
+const app = express();
+
+app.use(morgan('dev'));
 app.use(express.static('dist'));
 app.use(express.static('public'));
 
-app.get('/api', (req, res) => {
-    axios.get(`http://www.mocky.io/v2/5d5cba7e320000a5e4628f33?apikey=${process.env.APIKEY}`)
-        .then((result) => {
-            res.send(result.data);
-        })
-        .catch((error) => {
-            console.error(error);
-            res.send('An error occured.');
-        })
+app.get('/apod', (req, res) => {
+  astronomy = req.query.apod;
+	var url = `https://api.nasa.gov/planetary/apod?api_key=${process.env.NASA_API_KEY}`	
+  axios.get(url)
+    .then((response) => {
+      res.send(response.data);
+      })
+    .catch((error) => {
+      console.error(error);
+      res.send('An error occured.');
+      })
 });
 
 module.exports = app;

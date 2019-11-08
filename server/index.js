@@ -1,5 +1,12 @@
-const app = require('./server');
+const express = require('express');
+const app = express();
+const port = process.env.PORT || 3000;
+require('dotenv').config();
 
-const PORT = process.env.PORT || 3000;
+app.get('/', (req, res) => {
+	res.send(process.env.SECRET_KEY);
+})
 
-app.listen(PORT, () => console.log(`Server is listening on http://localhost:${PORT}`));
+app.listen(port, () => {
+	console.log(`Server is running on port ${port}.`)
+})
