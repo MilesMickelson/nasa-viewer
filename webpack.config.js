@@ -34,10 +34,6 @@ module.exports = {
         test: /\.html$/,
         loader: 'file?name=[name].[ext]',
       },
-      // {
-      //   test:/\.(s*)css$/,
-      //   use:['style-loader','css-loader', 'sass-loader']
-      // }
     ],
   },
 };
