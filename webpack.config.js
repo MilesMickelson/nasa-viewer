@@ -1,8 +1,8 @@
 const path = require('path');
 
 module.exports = {
-  context: path.join(__dirname, '/src'),
-
+	context: path.join(__dirname, '/src'),
+	
   entry: {
     javascript: './index'
   },
@@ -17,10 +17,10 @@ module.exports = {
       react: path.join(__dirname, 'node_modules', 'react')
     },
     extensions: ['.js', '.jsx']
-  },
+	},
 	
 	node: {
-		fs: 'empty'
+    fs: "empty"
 	},
 	
   module: {

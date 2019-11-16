@@ -10,7 +10,7 @@ const Astronomy = (props) => {
 				<div className="col-12">
 				  <div className="header-wrap">
 						<div className="nasa-logo-wrapper">
-					    <img className="nasa-logo" src="https://api.nasa.gov/images/logo.png"></img>
+					    <img className="nasa-logo" src="https://www.nasa.gov/sites/all/themes/custom/nasatwo/images/nasa-logo.svg"></img>
 						</div>
 						<div className="main-title-wrapper">
 					    <div className="main-title">NASA</div>
@@ -44,4 +44,3 @@ const Astronomy = (props) => {
 }
 
 export default Astronomy;
-

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import Astronomy from './Astronomy.js';
+import Astronomy from './Astronomy.jsx';
+import axios from 'axios';
 
 class App extends Component {
   constructor(props) {
@@ -8,6 +9,14 @@ class App extends Component {
 			astronomy: []
 		};
 	}
+
+	componentDidMount(){
+		axios
+		  .get('/apod')
+			.then(response => response.data)
+			.then(astronomy => this.setState({astronomy: astronomy}));
+  }
+
 
   render () {
 		const { astronomy } = this.state;
