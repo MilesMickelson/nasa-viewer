@@ -1,31 +1,21 @@
-# React Starter w/ Express Server, using Webpack
+# NASA-Viewer
 
-This is a project template that can be used to quickly start a react project. It has minimal dependencies and has a server route that you can use to proxy requests without exposing your api keys.
+![](images/ProjectScreenshot.png)
 
-## Getting Started
+This is a React web app project that employs the use of one of NASA's public API's -the Astronomy Picture of 
+the day. There is more to come and in time will have a website to view every single one seperately with all of their packaged up fun miscellaneous information for all of your astronomical curiositys.
 
-Install dependencies:
+## Please feel free to demo the project by taking these steps..
 ```
-$ npm install
+Clone or fork the repo
 ```
-
-Run the build
 ```
-$ npm run build
+npm install
 ```
-
-Start the server
 ```
-$ npm run start
+npm start
 ```
-
-## Use case
-
-When you create a request to a third party API from the server side (to protect your API key/credentials) you should create a `.env` file with your key.
-
-This will ensure that your private credentials do not get committed to git and will not be exposed to others on Github.
-
-You will also need to modify the `server/server.js` file to make your call to your api url and return back your data to your front end.
-
-An example of a request to a mock server is shown in the file. You will replace this with the API you want data from.
-
+```
+Open your browser to view on localhost: 3000
+```
+* **Thank you**, ***-Miles Mickelson***
