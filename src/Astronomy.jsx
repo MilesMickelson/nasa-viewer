@@ -3,7 +3,7 @@ import React from "react";
 const Astronomy = (props) => {
 
 	const { title, url, hdurl, explanation, date, copyright } = props.data; 
-
+// https://www.nasa.gov/sites/all/themes/custom/nasatwo/images/nasa-logo.svg
 	return (
 		<div className="col-12">
 			<div className="row header-row">

@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run build && node server/index.js",
     "build": "npm run scss && webpack --mode development",
-    "scss": "node-sass ./src/css/style.scss -o ./public"
+    "scss": "node-sass ./src/sass/style.scss -o ./public"
   },
   "author": "",
   "license": "ISC",
