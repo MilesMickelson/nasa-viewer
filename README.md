@@ -2,8 +2,7 @@
 
 ![](images/ProjectScreenshot.png)
 
-This is a React web app project that employs the use of one of NASA's public API's -the Astronomy Picture of 
-the day. There is more to come and in time will have a website to view every single one seperately with all of their packaged up fun miscellaneous information for all of your astronomical curiositys.
+This React web application utilizes NASA's "Astronomy Picture of the Day" API to display the current days photo and history information provided on it.
 
 ## Please feel free to demo the project by taking these steps..
 ```
